@@ -28,7 +28,15 @@ local NotWhitelisted = "Bro you aint whitelisted ask The One Who Didnt Ask#7724 
 
 local function farm()
 	BTAmt.Text =  (string.format("%.0f", game.Players.LocalPlayer.PrivateStats.BodyToughness.Value))
-	if Config.Text == "10M" then
+	elseif Config.Text == "100" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(365, 250, -446)}):Play()
+	elseif Config.Text == "10K" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(356, 264, -494)}):Play()
+	elseif Config.Text == "100K" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(1636, 259, 2247)}):Play()
+	elseif Config.Text == "1M" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(-2298, 977, 1071)}):Play()
+	elseif Config.Text == "10M" then
 		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(-2043, 714, -1891)}):Play()
 	elseif Config.Text == "1B"	 then
 		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(-254, 287, 979)}):Play()
@@ -40,14 +48,17 @@ local function farm()
 	
 	end
 end
-
 local function respawn()
 	if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
 		game:GetService("ReplicatedStorage").RemoteEvent:FireServer({"Respawn"})
 	end
 end
 
+
 if Plr.UserId == 2385124288 then
+	print("you're whitelisted :D")
+elseif Plr.UserId == 1119588299 then
+	print("you're whitelisted :D")
 else
 	Plr:Kick(NotWhitelisted)	
 		
@@ -80,7 +91,7 @@ Main.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 Main.Position = UDim2.new(0.167760745, 0, 0.0596797727, 0)
 Main.Size = UDim2.new(0, 910, 0, 604)
 Main.Active = true
-Main.Draggable = false
+Main.Draggable = true
 
 UICorner.CornerRadius = UDim.new(0, 12)
 UICorner.Parent = Main
@@ -183,8 +194,7 @@ Toggle.MouseButton1Down:Connect(function()
 	Toggle.Text = "Farm: ON"	
 	repeat
 		wait(1)
-			farm()
-			respawn()
+		farm()
 		
 		until Toggle.Text == "Farm: OFF"
 	elseif Toggle.Text == "Farm: ON" then
