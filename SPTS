@@ -42,6 +42,9 @@ local function farm()
 end
 
 if Plr.UserId == 2385124288 then
+	print("you're whitelisted :D")
+elseif Plr.UserId == 1119588299 then
+	print("you're whitelisted :D")
 else
 	Plr:Kick(NotWhitelisted)	
 		
