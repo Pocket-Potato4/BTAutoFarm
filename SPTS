@@ -28,7 +28,7 @@ local NotWhitelisted = "Bro you aint whitelisted ask The One Who Didnt Ask#7724 
 
 local function farm()
 	BTAmt.Text =  (string.format("%.0f", game.Players.LocalPlayer.PrivateStats.BodyToughness.Value))
-	elseif Config.Text == "100" then
+	if Config.Text == "100" then
 		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(365, 250, -446)}):Play()
 	elseif Config.Text == "10K" then
 		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(356, 264, -494)}):Play()
