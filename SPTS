@@ -195,7 +195,7 @@ Toggle.MouseButton1Down:Connect(function()
 	repeat
 		wait(1)
 		farm()
-		
+		respawn()
 		until Toggle.Text == "Farm: OFF"
 	elseif Toggle.Text == "Farm: ON" then
 		Toggle.Text = "Farm: OFF"
