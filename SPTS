@@ -28,7 +28,15 @@ local NotWhitelisted = "Bro you aint whitelisted ask The One Who Didnt Ask#7724 
 
 local function farm()
 	BTAmt.Text =  (string.format("%.0f", game.Players.LocalPlayer.PrivateStats.BodyToughness.Value))
-	if Config.Text == "10M" then
+	elseif Config.Text == "100" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(365, 250, -446)}):Play()
+	elseif Config.Text == "10K" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(356, 264, -494)}):Play()
+	elseif Config.Text == "100K" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(1636, 259, 2247)}):Play()
+	elseif Config.Text == "1M" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(-2298, 977, 1071)}):Play()
+	elseif Config.Text == "10M" then
 		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(-2043, 714, -1891)}):Play()
 	elseif Config.Text == "1B"	 then
 		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(-254, 287, 979)}):Play()
