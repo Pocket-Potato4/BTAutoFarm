@@ -21,7 +21,7 @@ local BT = Instance.new("TextLabel")
 local BTAmt = Instance.new("TextLabel")
 local Label = Instance.new("TextLabel")
 local UICorner_6 = Instance.new("UICorner")
-local NotWhitelisted = "Bro you aint whitelisted ask The One Who Didnt Ask#7724 for a whitelist"
+local NotWhitelisted = "Bro you aint whitelisted ask Pocket_Potato#7724 for a whitelist"
 
 
 
