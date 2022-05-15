@@ -192,6 +192,13 @@ Toggle.TextWrapped = true
 Toggle.MouseButton1Down:Connect(function()
 	if Toggle.Text == "Farm: OFF" then
 	Toggle.Text = "Farm: ON"	
+	local args = {
+    	[1] = "BT Farm Made by Pocket_Potato7724",
+    	[2] = "All"
+	}
+
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
 	repeat
 		wait(1)
 		respawn()
@@ -266,6 +273,7 @@ UIP.InputBegan:Connect(function(input, gameProcessedEvent)
 end)
 local Plr = game:GetService("Players").LocalPlayer
 local Tws = game:GetService("TweenService")
+print("say /e cmds and look at f9 for teleport commands")
 
 Plr.Chatted:Connect(function(Cmd)
 	if Cmd == "/e cmds" then
