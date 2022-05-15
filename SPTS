@@ -264,3 +264,61 @@ UIP.InputBegan:Connect(function(input, gameProcessedEvent)
 		end
 	end
 end)
+local Plr = game:GetService("Players").LocalPlayer
+local Tws = game:GetService("TweenService")
+
+Plr.Chatted:Connect(function(Cmd)
+	if Cmd == "/e cmds" then
+		print("youve been whitelisted so here are the commands \n/e spawn\n/e cityport\n/e crystal\n/e bluestar\n/e greenstar\n/e orangestar\n/e hellbt\n/e zen")
+	end
+end)
+
+
+
+
+
+Plr.Chatted:Connect(function(Cmd)
+	if Cmd == "/e spawn" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(426, 249, 878)}):Play()
+	end
+end)
+
+Plr.Chatted:Connect(function(Cmd)
+	if Cmd == "/e cityport" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(343, 264, -418)}):Play()
+	end
+end)
+
+Plr.Chatted:Connect(function(Cmd)
+	if Cmd == "/e crystal" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(-2276, 1974, 1051)}):Play()
+	end
+end)
+
+Plr.Chatted:Connect(function(Cmd)
+	if Cmd == "/e zen" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(-2547, 5677, -500)}):Play()
+	end
+end)
+
+Plr.Chatted:Connect(function(Cmd)
+	if Cmd == "/e bluestar" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(1176, 4789, -2293)}):Play()
+	end
+end)
+
+Plr.Chatted:Connect(function(Cmd)
+	if Cmd == "/e greenstar" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(1380, 9274, 1647)}):Play()
+	end
+end)
+Plr.Chatted:Connect(function(Cmd)
+	if Cmd == "/e orangestar" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(-368, 15735, -11)}):Play()
+	end
+end)
+Plr.Chatted:Connect(function(Cmd)
+	if Cmd == "/e hellbt" then
+		Tws:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(-246, 291, 960)}):Play()
+	end
+end)
