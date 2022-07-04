@@ -63,6 +63,8 @@ elseif Plr.UserID == 2060904145 then
 	print("HI Nick")
 elseif Plr.UserId == 1623830916 then
 	print("Hello Nje")
+elseif Plr.UserId == 2802182696 then
+	print("Hello Unlimited")	
 else
 	Plr:Kick(NotWhitelisted)	
 		
